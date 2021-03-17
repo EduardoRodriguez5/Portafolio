@@ -1,0 +1,55 @@
+@import "~bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,600&display=swap');
+
+
+
+
+body {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  /*font-family: 'Montserrat', sans-serif;*/
+  font-family: 'Roboto Mono', monospace;
+  color: #222222;
+  // /*font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  //   'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  //   sans-serif;*/
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+}
+
+html {
+  width: 100%;
+  min-height: 100% !important;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+
+/* RULES FOR MARGINS ETC */
+
+.nomargin {
+  margin: 0;
+  padding: 0;
+
+  &.black-bg {
+    background-color: #222222;
+    height: auto;
+  }
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}

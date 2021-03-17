@@ -1,0 +1,45 @@
+
+.container-proyects{
+
+    padding: 70px;
+    background-color: #549282;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.proyects__title{
+    color: navajowhite;
+    margin-bottom: 30px;
+}
+
+.proyects__main{
+
+    &__title{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    &__title > p {
+        font-size: 1.5vh;
+        color: navajowhite;
+        text-align: justify;
+    }
+    &__items{
+        display: flex;
+        justify-content: center;
+
+        
+    }
+    &__items > img {
+        max-width: 80%;
+    }
+}
+@media screen and (min-width: 972px) {
+
+    .proyects__main__title > p {
+
+        font-size: 2vh;
+    }
+}

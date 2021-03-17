@@ -1,0 +1,114 @@
+.container__Contact{
+
+
+    &-title{
+      
+        text-align: center;
+        font-size: 3rem;
+        font-style: oblique;
+        padding-top: 70px;
+        padding-bottom: 5%;
+    }
+}
+
+.container__Contact-mobile{
+    display: flex;
+    flex-direction: row;
+    margin-left: 25%;
+    padding: 20px;
+}
+
+.fa-mobile{
+    font-size: 30px;
+    margin-right: 20px;
+}
+
+.contact__form{
+    display: flex;
+    flex-direction: column;
+    font-family: monospace;
+    margin-left: 25%;
+    padding: 20px;
+
+        &-input{
+            width: 300px;
+            background-color: transparent;
+            padding: 15px;
+            margin-bottom: 10px;
+        }
+
+        &-textarea{
+            resize: none;
+            background-color: transparent;
+            width: 500px;
+            height: 250px;
+        }
+
+        &-send{
+            width: 100px;
+            border-radius: 12px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+       
+
+    }
+    .modalContainer {
+        display: none; 
+        position: fixed; 
+        z-index: 1;
+        padding-top: 100px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%; 
+        overflow: auto; 
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0,0.4);
+    }
+
+    .modalContainer .modal-content {
+        background-color: #fefefe;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid lightgray;
+        border-top: 10px solid #58abb7;
+        width: 60%;
+    }
+
+    .modalContainer .close {
+        color: #aaaaaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .modalContainer .close:hover,
+    .modalContainer .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+
+    @media all and (max-width: 600px) {
+
+        .container__Contact{
+
+            &-title{
+                font-size: 2rem;
+            }
+        }
+        .contact__form{
+            margin-left: 10%;
+
+            &-input{
+                width: 250px;
+
+            }
+            &-textarea{
+                width: auto;
+            }
+        }
+    }

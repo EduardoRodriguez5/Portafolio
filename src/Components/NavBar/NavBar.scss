@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,600&display=swap');
+
+
+.navbar-collapse.show{
+    background-color: #549282;
+
+    margin: 0 -10px;
+    width: 100%;
+    
+  }
+  
+  .navbar-collapse.collapsing {
+    background-color: #549282;
+    margin: 0 -10px;
+    width: 100%;
+  }
+  
+  
+  .navbar-toggler {
+    border-color: transparent !important;
+  }
+.navbar{
+
+    background-color: #549282 !important;
+    min-width: 100%;
+  max-width: 100%;
+  height: 9vh;
+  display: flex;
+  align-items: baseline;
+  padding: 8px 1vw;
+
+    font-family: 'Roboto Mono', monospace;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 20;
+}
+.logo-title{
+    padding-left: 3vh;
+}
+.navbar-nav{
+    padding-left: 4vh;
+
+}
+
+
+@media all and (min-width: 600px) {
+
+    .logo-title{
+       
+        font-size: 3vh;
+       
+    }
+    .navbar-nav{
+        padding-left: 4vh;
+
+    }
+    
+
+}
+@media screen and (min-width: 972px) {
+    
+    .logo-title{
+        font-size: 5vh;
+        
+    }
+    .navbar-collapse{
+        justify-content: flex-end;
+    }
+    .navbar{
+        height: 13vh;
+
+        &-nav{
+            padding-right: 7vh;
+        }
+        &__typo{
+            font-size: 3vh;
+        }
+    }
+  }
+  

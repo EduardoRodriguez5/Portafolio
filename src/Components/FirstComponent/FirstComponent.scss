@@ -1,0 +1,46 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,600&display=swap');
+
+.container-FirstComponent {
+    font-family: 'Roboto Mono', monospace;
+    height: 420px;
+    width: 100%;
+    background-image: url("../../assets/fondo3.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  
+}
+
+.text {
+    font-weight: 100;
+    font-size: 2vh;
+    color: #fafafa;
+
+}
+.dud {
+  color: #757575;
+}
+@media all and (min-width: 600px) {
+
+  .container-FirstComponent{
+    height: 500px;
+
+  }
+
+  .text {
+    font-size: 3vh;
+  }
+}
+
+@media screen and (min-width: 972px) {
+    
+  .container-FirstComponent{
+    height: 700px;
+  }
+  .text {
+    font-size: 8vh;
+  }
+}

@@ -1,0 +1,47 @@
+.footer{
+    background-color: black;
+    padding: 20px;
+    height: 300px;
+}
+
+.footer > h3 {
+
+    font-size: 1.5vh;
+    text-align: center;
+    color: whitesmoke;
+}
+.rrss{
+    display: flex;
+    justify-content: center;
+}
+.span-rrss{
+    font-size: 35px;
+    margin: 20px;
+  }
+  
+  .span-rrss-a{
+    text-decoration: none;
+    color: whitesmoke;
+    cursor: pointer;
+
+  }
+  
+  .span-rrss-a:hover{
+    color: navajowhite;
+
+  }
+  @media all and (min-width: 600px) {
+    .footer{
+        height: 520px;
+    }
+  }
+  @media screen and (min-width: 972px) {
+
+    .footer{
+        height: auto;
+    }
+    .footer > h3{
+        font-size: 2vh;
+    }
+  }
+ 
