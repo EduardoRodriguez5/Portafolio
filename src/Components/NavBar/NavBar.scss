@@ -62,7 +62,8 @@
 @media screen and (min-width: 972px) {
     
     .logo-title{
-        font-size: 5vh;
+        font-size: 3vh;
+        padding: 20px 110px;
         
     }
     .navbar-collapse{
@@ -72,11 +73,14 @@
         height: 13vh;
 
         &-nav{
-            padding-right: 7vh;
+            margin: auto;
         }
         &__typo{
-            font-size: 3vh;
+            font-size: 2vh;
         }
+    }
+    .navbar__typo{
+        padding-left: 60px !important;
     }
   }
   

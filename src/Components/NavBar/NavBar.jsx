@@ -13,9 +13,9 @@ export default function NavBar(){
                 <Navbar.Toggle  className="burguer" aria-controls="basic-navbar-nav"/>
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav>
-                        <Nav.Link className="navbar__typo" href="/">Sobre Mi</Nav.Link>
-                       <Nav.Link className="navbar__typo" href="/surfboards">Proyectos</Nav.Link>
-                       <Nav.Link className="navbar__typo" href="/surfboards">Contacto</Nav.Link>
+                        <Nav.Link className="navbar__typo" href="#aboutMe">Sobre Mi</Nav.Link>
+                       <Nav.Link className="navbar__typo" href="#proyects">Proyectos</Nav.Link>
+                       <Nav.Link className="navbar__typo" href="#contact">Contacto</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>

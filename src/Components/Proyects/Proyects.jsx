@@ -11,7 +11,7 @@ import "./Proyects.scss";
 
 export default function Proyects() {
   return (
-    <div className="container-proyects">
+    <div className="container-proyects" id="proyects">
 
       <div className="proyects__title">
           <h2>Proyectos</h2>

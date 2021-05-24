@@ -62,7 +62,7 @@ export default function Contact() {
   
 
   return (
-    <div className="container__Contact" id="ContactComponent">
+    <div className="container__Contact" id="contact">
       <h2 className="container__Contact-title">Contacto</h2>
       <div className="container__Contact-mobile">
           <span class="fas fa-mobile"></span>

@@ -3,6 +3,7 @@ import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
 import "./AboutMe.scss";
 import fotoCV from "../../assets/foto_CV.jpg";
+import cV from "../../assets/cv-Eduardo.pdf";
 
 export default function AbouteMe() {
   const [show, setShow] = useState(false);
@@ -11,7 +12,7 @@ export default function AbouteMe() {
   const handleShow = () => setShow(true);
 
   return (
-    <div className="aboutMe">
+    <div className="aboutMe" id="aboutMe">
       <div className="description">
         <div className="description__img">
           <img src={fotoCV} className="imgCv" />
@@ -28,6 +29,9 @@ export default function AbouteMe() {
       </div>
       <div className="tecnologys">
         <Button onClick={handleShow}>Tecnologías</Button>
+        <Button href={cV} download="CV-Eduardo">
+          CV
+        </Button>
 
         <Modal show={show} onHide={handleClose} centered>
           <Modal.Header closeButton>
