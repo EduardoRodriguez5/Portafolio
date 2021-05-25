@@ -4,7 +4,7 @@ import "./footer.scss";
 export default function Footer() {
   return (
     <div className="footer">
-      <h3>Eduardo Rodríguez González © 2021</h3>
+      <p>Eduardo Rodríguez González © 2021</p>
       <div className="rrss">
         <a
           className="span-rrss-a"

@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Paytone+One&display=swap');
+// colors:
+
+$nav-color: white;
+$main-color: #222222;
+$title-color: white;
+$text-color: white;
+$footer-color: white;
+
+$first-color: #3340c3;
+$second-color: #55aea2;
+
+$container-color-1: #f3e9c6;
+$container-color-2: $first-color;
+$container-color-3: $first-color;
+$container-color-4: #f3e9c6;
+
+
+  // fonts :
+$edu-font: 'Paytone One', sans-serif;
+$scramble-font: 'Roboto Mono', monospace;
+$main-font: 'Cabin', sans-serif;
+
+// sizes:
+$nav-height: 10vh;
+$text-size: 18px;

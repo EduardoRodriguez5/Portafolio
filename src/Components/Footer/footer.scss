@@ -1,15 +1,17 @@
+@import "src/utils/variables";
+
 .footer{
-    background-color: black;
+    background: $main-color;
     padding: 20px;
     height: 200px;
 }
 
-.footer > h3 {
-
-    font-size: 1.5vh;
+.footer > p {
+    font-family: $edu-font;
     text-align: center;
     color: whitesmoke;
 }
+
 .rrss{
     display: flex;
     justify-content: center;
@@ -40,8 +42,4 @@
     .footer{
         height: auto;
     }
-    .footer > h3{
-        font-size: 2vh;
-    }
   }
- 

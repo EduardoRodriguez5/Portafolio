@@ -89,7 +89,6 @@ class TextScramble {
 
     return(
         <div className="container-FirstComponent">
-
             <div class="text"></div>
         </div>
     )

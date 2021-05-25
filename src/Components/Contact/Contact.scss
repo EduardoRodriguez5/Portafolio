@@ -1,114 +1,141 @@
-.container__Contact{
+@import "src/utils/variables";
 
 
-    &-title{
-      
-        text-align: center;
-        font-size: 2rem;
-        font-style: oblique;
-        padding-top: 70px;
-        padding-bottom: 20px;
-    }
+.container__Contact {
+  padding-top: $nav-height*1.2;
+  background: $container-color-2;
+  height: 100vh;
+  min-height: 800px;
+  color: $container-color-1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+
+  &-title {
+    font-family: $edu-font;
+  }
 }
 
-.container__Contact-mobile{
-    display: flex;
-    flex-direction: row;
-    margin-left: 25%;
-    padding: 20px;
+.fa-mobile {
+  font-size: 30px;
+  margin-right: 20px;
 }
 
-.fa-mobile{
-    font-size: 30px;
-    margin-right: 20px;
+.container__Contact-mobile {
+  margin-top: 20px;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: center;
+  background: $container-color-1;
+  width: 750px;
+  color: $container-color-2;
 }
 
-.contact__form{
-    display: flex;
-    flex-direction: column;
-    font-family: monospace;
-    margin-left: 25%;
-    padding: 20px;
+.contact__form {
+  width: 750px;
+  background: $container-color-1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: $main-font;
+  padding: 20px;
 
-        &-input{
-            width: 300px;
-            background-color: transparent;
-            padding: 15px;
-            margin-bottom: 10px;
-        }
+  &-input {
+    width: 100%;
+    background-color: transparent;
+    padding: 15px;
+    margin-bottom: 10px;
+  }
 
-        &-textarea{
-            resize: none;
-            background-color: transparent;
-            width: 500px;
-            height: 250px;
-        }
-
-        &-send{
-            width: 100px;
-            border-radius: 12px;
-            text-align: center;
-            margin-top: 20px;
-        }
-
-       
-
+  &-textarea {
+    resize: none;
+    background-color: transparent;
+    width: 100%;
+    height: 200px;
+    border: 2.5px solid $container-color-2;
+    padding: 10px;
+    &::placeholder {
+      color: $container-color-2;
     }
-    .modalContainer {
-        display: none; 
-        position: fixed; 
-        z-index: 1;
-        padding-top: 100px;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%; 
-        overflow: auto; 
-        background-color: rgb(0,0,0);
-        background-color: rgba(0,0,0,0.4);
-    }
+  }
 
-    .modalContainer .modal-content {
-        background-color: #fefefe;
-        margin: auto;
-        padding: 20px;
-        border: 1px solid lightgray;
-        border-top: 10px solid #58abb7;
-        width: 60%;
-    }
+  &-send {
+    width: 100%;
+    border-radius: 12px;
+    text-align: center;
+    margin-top: 20px;
+  }
+}
 
-    .modalContainer .close {
-        color: #aaaaaa;
-        float: right;
-        font-size: 28px;
-        font-weight: bold;
-    }
+input {
+  border: 2.5px solid $container-color-2;
+  color: $container-color-2;
+  &::placeholder {
+    color: $container-color-2;
+  }
+}
 
-    .modalContainer .close:hover,
-    .modalContainer .close:focus {
-        color: #000;
-        text-decoration: none;
-        cursor: pointer;
-    }
+.modalContainer {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
 
+.modalContainer .modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid lightgray;
+  border-top: 10px solid #58abb7;
+  width: 60%;
+}
 
-    @media all and (max-width: 600px) {
+.modalContainer .close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
 
-        .container__Contact{
+.modalContainer .close:hover,
+.modalContainer .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
 
-            &-title{
-                font-size: 2rem;
-            }
-        }
-        .contact__form{
-            margin-left: 10%;
+#btn-send {
+  background: $container-color-2;
+  padding: 10px 0;
+  color: $container-color-1;
+  &:hover {
+    border: 2.5px solid $container-color-2;
+    background: transparent;
+    color: $container-color-2;
+  }
+}
 
-            &-input{
-                width: 250px;
+@media screen and (max-width: 800px){
+  .contact__form, .container__Contact-mobile {
+    width: 400px;
+  }
+}
 
-            }
-            &-textarea{
-                width: auto;
-            }
-        }
-    }
+@media screen and (max-width: 500px){
+  .contact__form, .container__Contact-mobile {
+    width: 250px;
+  }
+}

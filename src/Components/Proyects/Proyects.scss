@@ -1,39 +1,50 @@
+@import "src/utils/variables";
 
 .container-proyects{
-
-    padding: 70px;
-    background-color: #549282;
+    padding-top: $nav-height*1.2;
+    background: $container-color-1;
+    border-top: 5px solid $container-color-2;
+    font-family: $main-font;
     display: flex;
     flex-direction: column;
     align-items: center;
 
 }
 .proyects__title{
-    color: navajowhite;
+    font-family: $edu-font;
+    color: $container-color-2;
     margin-bottom: 30px;
 }
 
 .proyects__main{
 
     &__title{
+        padding: 0 20px;
         display: flex;
         flex-direction: column;
         align-items: center;
+        &__each {
+            margin-top: 20px;
+            color: $container-color-2;
+        }
 
     }
+    &__last {
+        margin-bottom: 100px;
+    }
     &__title > p {
-        font-size: 1.5vh;
-        color: navajowhite;
+        color: $main-color;
         text-align: justify;
     }
     &__items{
         display: flex;
         justify-content: center;
 
-        
+
     }
     &__items > img {
         max-width: 80%;
+        max-height: 100%;
     }
 }
 @media screen and (min-width: 972px) {

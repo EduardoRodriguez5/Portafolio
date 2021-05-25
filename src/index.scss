@@ -1,14 +1,12 @@
 @import "~bootstrap/scss/bootstrap";
+@import "utils/variables";
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,600&display=swap');
 
-
-
-
 body {
+  padding: 0;
   width: 100%;
   min-height: 100%;
   margin: 0;
-  padding: 0;
   /*font-family: 'Montserrat', sans-serif;*/
   font-family: 'Roboto Mono', monospace;
   color: #222222;
@@ -52,4 +50,12 @@ html {
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+a {
+  color: $main-color;
+  text-decoration: none;
+  &:hover {
+     color: $first-color;
+  }
 }
