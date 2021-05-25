@@ -90,6 +90,7 @@ class TextScramble {
     return(
         <div className="container-FirstComponent">
             <div class="text"></div>
+            {/*<span className="fas fa-sort-down"></span>*/}
         </div>
     )
 }
