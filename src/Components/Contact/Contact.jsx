@@ -1,48 +1,26 @@
 
-import React from "react";
+import React, {useState} from "react";
 
 import emailjs from "emailjs-com";
+import Modal from "react-bootstrap/Modal";
+
 
 
 import "./Contact.scss";
 
 export default function Contact() {
 
-    if(document.getElementById("btnModal")){
-        var modal = document.getElementById("tvesModal");
-        var btn = document.getElementById("btn-send");
-        var span = document.getElementsByClassName("close")[0];
-        var body = document.getElementsByTagName("body")[0];
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
     
-        btn.onClick = function() {
-            modal.style.display = "block";
-            body.style.position = "static";
-            body.style.height = "100%";
-            body.style.overflow = "hidden";
-        }
-    
-        span.onclick = function() {
-            modal.style.display = "none";
-    
-            body.style.position = "inherit";
-            body.style.height = "auto";
-            body.style.overflow = "visible";
-        }
-    
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-    
-                body.style.position = "inherit";
-                body.style.height = "auto";
-                body.style.overflow = "visible";
-            }
-        }
-    }
     
     function sendEmail(e) {
     e.preventDefault();
 
+    handleShow();
     emailjs
       .sendForm(
         "service_ujrh43f",
@@ -65,8 +43,8 @@ export default function Contact() {
     <div className="container__Contact" id="contact">
       <h2 className="container__Contact-title">Contacto</h2>
       <div className="container__Contact-mobile">
-          <span class="fas fa-mobile"></span>
-          <p>626146104</p>
+          <span class="fas fa-envelope"></span>
+          <p className="email-contact">contacto@eduardorodriguezdev.com</p>
       </div>
       <div className="container__Contact-form">
         <form className="contact__form" onSubmit={sendEmail}>
@@ -75,8 +53,10 @@ export default function Contact() {
           <input
             type="text"
             name="user_name"
+            title="El nombre no es valido"
             placeholder="Escriba su nombre"
             className="contact__form-input"
+            required = "true"
           />
           <label>Email</label>
           <input
@@ -84,22 +64,27 @@ export default function Contact() {
             name="user_email"
             placeholder="Escriba su email"
             className="contact__form-input"
+            required="true"
+
           />
           <label>Mensaje</label>
           <textarea
             name="message"
             placeholder="Escriba su mensaje"
             className="contact__form-textarea"
+            required="true"
           />
-           <div id="tvesModal" className="modalContainer">
-            <div className="modal-content">
-                <span className="close">×</span>
-                <h2>Modal</h2>
-                <p>Se ha desplegado el modal y bloqueado el scroll del body!</p>
-            </div>
-	        </div>
-          <input type="submit" id ="btn-send" value="Enviar" className="contact__form-send"/>
-        </form>
+          <input type="submit" value="Enviar" className="contact__form-send"/>
+          </form>
+
+          <Modal show={show} onHide={handleClose} centered>
+          <Modal.Header closeButton>
+            <Modal.Title>Mensaje enviado</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+            <p>Muchas gracias por ponerse en contacto conmigo. Le contestaré en la máxima brevedad posible</p>
+          </Modal.Body>
+        </Modal>
       </div>
      
 

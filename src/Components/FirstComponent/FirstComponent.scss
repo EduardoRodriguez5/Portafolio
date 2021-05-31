@@ -3,7 +3,7 @@
 
 .container-FirstComponent {
     font-family: 'Roboto Mono', monospace;
-    height: 420px;
+    height: 100vh;
     width: 100%;
     background-image: url("../../assets/fondo4.jpeg");
     background-repeat: no-repeat;
@@ -16,7 +16,7 @@
 
 .text {
     font-weight: 100;
-    font-size: 2vh;
+    font-size: 3vh;
     color: #fafafa;
 
 }
@@ -25,22 +25,15 @@
 }
 @media all and (min-width: 600px) {
 
-  .container-FirstComponent{
-    height: 500px;
-
-  }
 
   .text {
-    font-size: 3vh;
+    font-size: 5vh;
   }
 }
 
 @media screen and (min-width: 972px) {
     
-  .container-FirstComponent{
-    height: 700px;
-  }
   .text {
-    font-size: 8vh;
+    font-size: 9vh;
   }
 }

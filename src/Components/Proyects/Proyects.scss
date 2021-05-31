@@ -2,6 +2,7 @@
 .container-proyects{
 
     padding: 70px;
+    height: 100%;
     background-color: #549282;
     display: flex;
     flex-direction: column;
@@ -35,11 +36,33 @@
     &__items > img {
         max-width: 80%;
     }
+   
+}
+        .maleteo__img{
+            height: 300px;
+        }
+        .musify__img{
+            height: 150px;
+        }
+@media all and (min-width: 600px) {
+
+    .maleteo__img{
+        height: 260px;
+    }
+    .musify__img{
+        height: 260px;
+    }
 }
 @media screen and (min-width: 972px) {
 
     .proyects__main__title > p {
 
         font-size: 2vh;
+    }
+    .maleteo__img{
+        height: 416px;
+    }
+    .musify__img{
+        height: 240px;
     }
 }

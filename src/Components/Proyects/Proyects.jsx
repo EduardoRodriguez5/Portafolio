@@ -23,13 +23,13 @@ export default function Proyects() {
           </div>
           <div className="row">
               <div className="proyects__main__items col-sm-12 col-md-4">
-                  <img src={maleteo1} />
+                  <img src={maleteo1} className="maleteo__img"/>
               </div>
               <div className="proyects__main__items col-sm-12 col-md-4">
-                  <img src={maleteo2} />
+                  <img src={maleteo2} className="maleteo__img"/>
               </div>
               <div className="proyects__main__items col-sm-12 col-md-4">
-                  <img src={maleteo3} />
+                  <img src={maleteo3} className="maleteo__img"/>
               </div>
               
           </div>

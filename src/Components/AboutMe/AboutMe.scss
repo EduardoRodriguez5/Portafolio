@@ -1,6 +1,7 @@
 .aboutMe{
 
     padding: 60px;
+    height: 100vh;
   
 
 }
@@ -9,6 +10,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: "Cabin",sans-serif;
+
 
 
     &__img{
@@ -17,21 +20,22 @@
     }
 
     &__text{
-       font-size: 1.3vh;
+       font-size: 2vh;
        text-align: justify;
        padding: 20px;
        padding-top: 10px;
     }
 }
 .imgCv{
-    width:120px;
-    height:120px;
+    height:200px;
+    width: 200px;
     border-radius:150px;
     
 
 }
 
 .tecnologys{
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -49,32 +53,38 @@
     width: 130px;
     margin-bottom: 20px;
 }
-.cv-download{
-    
+.btn-primary{
+    color: #fff;
+    background-color: #549282;
+    border-color: #549282;
 }
 
 @media all and (min-width: 600px) {
     
     .description{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 60px;
 
     }
     .imgCv{
-        width:200px;
-        height:200px;
+        width:250px;
+        height:250px;
         border-radius:150px;
         
     
     }
     .description {
         &__text{
-            font-size: 1.5vh;
+            font-size: 2.5vh;
+            margin: 30px 0;
         }
     }
     .tecnologys{
+        margin: 0px;
         flex-direction: row;
-        justify-content: center;
+        justify-content: flex-start;
     }
     .btn{
         margin-left: 150px;
@@ -97,4 +107,12 @@
         
     
     }
+    .tecnologys{
+        margin: 0px;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+
+    
   }
