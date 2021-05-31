@@ -68,7 +68,7 @@ class TextScramble {
   
   const phrases = [
     'Hello World,',
-    'Soy Eduardo Rodríguez González',
+    'Soy Eduardo Rodríguez',
     'Full Stack Developer',
   
   ]
