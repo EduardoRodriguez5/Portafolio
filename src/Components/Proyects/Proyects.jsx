@@ -22,13 +22,13 @@ export default function Proyects() {
               <p>HTML | CSS | JAVASCRIPT | REACT JS | NODE JS | MONGODB | EXPRESS JS | MONGOOSE | GOOGLE MAPS API</p>
           </div>
           <div className="row">
-              <div className="proyects__main__items col-sm-12 col-md-4">
+              <div className="proyects__main__items col-sm-12 col-md-4 px-0">
                   <img src={maleteo1} className="maleteo__img"/>
               </div>
-              <div className="proyects__main__items col-sm-12 col-md-4">
+              <div className="proyects__main__items col-sm-12 col-md-4 px-0">
                   <img src={maleteo2} className="maleteo__img"/>
               </div>
-              <div className="proyects__main__items col-sm-12 col-md-4">
+              <div className="proyects__main__items col-sm-12 col-md-4 px-0">
                   <img src={maleteo3} className="maleteo__img"/>
               </div>
               
@@ -38,11 +38,11 @@ export default function Proyects() {
               <p>HTML || CSS3 || SASS || JS ||ANGULAR || NODEJS || EXPRESS || MONGODB.</p>
           </div>
           <div className="row">
-              <div className="proyects__main__items col-sm-12 col-lg-6">
+              <div className="proyects__main__items col-sm-12 col-lg-6 px-0">
                   <img src={musify1} className="musify__img"/>
               </div>
               
-              <div className="proyects__main__items col-sm-12 col-lg-6">
+              <div className="proyects__main__items col-sm-12 col-lg-6  px-0">
                   <img src={musify2} className="musify__img"/>
               </div>
               
